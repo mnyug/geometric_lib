@@ -1,12 +1,22 @@
+
 def area(a):
-    """a — сторона квадрата.
-    Вычисляет площадь квадрата.
-    """
-    return a * a
+    '''Принимает сторону квадрата и возращает его площадь'''
+    if a == 0 :
+        return "erorr" 
+    elif isinstance(a, int):
+        if a < 0: return "erorr"
+        else: return a * a
+    else:
+        return "erorr"
 
 
 def perimeter(a):
-    """a — сторона квадрата.
-    Вычисляет периметр квадрата.
-    """
-    return 4 * a
+    '''Принимает сторону квадрата и возращает его периметр'''
+    if a == 0 :
+        return "erorr" 
+    elif isinstance(a, int):
+        if a <0: return"erorr"
+        else:return a * 4
+    else:
+        return "erorr"
+
